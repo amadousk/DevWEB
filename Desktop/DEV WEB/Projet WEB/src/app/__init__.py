@@ -36,7 +36,7 @@ def assos():
   #for data in result.scalars():
     #print(f"{data.rna_id}")
 
-  return render_template('assos.html', datas=datas)
+  return render_template('assos.html', datas=datas)  
 
 @app.route('/hello')
 @app.route('/hello/<name>')
