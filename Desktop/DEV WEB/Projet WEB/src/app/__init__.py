@@ -25,6 +25,18 @@ def home():
 def about():
   return render_template('about.html')
 
+@app.route('/edit/<id>' ,methods=['GET','POST'])
+def edit(id):
+  return render_template('edit.html')
+
+@app.route('/add')
+def add():
+  return render_template('add.html')
+
+@app.route('/delete/<id>',methods=['GET','POST'])
+def delete(id):
+  return render_template('delete.html')
+
 @app.route('/assos')
 def assos():
   datas = Data.query.limit(10).all()

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 {% extends 'base.html' %}
 
 {% block title %}<title>Page assos</title>{% endblock %}
@@ -21,12 +22,12 @@
             <td>{{ data.rna_id}}</td>
             <td>{{ data.rna_id_ex_id}}</td>
             <td>{{ data.gestion}}</td>
-            <td><a href="/edit.html" class="btn btn-outline-primary btn-lg">edit</a></td>
-            <td><a href="/delete.html" class="btn btn-outline-danger btn-lg">delete</a></td>
+            <td><a href="/edit/{{ data.id}}" class="btn btn-outline-primary">edit</a></td>
+            <td><a href="/delete/{{ data.id}}" class="btn btn-outline-danger">delete</a></td>
             
         </tr>
         {% endfor %}
     </tbody>
 </table>
-<button href="/add" class="btn btn-success btn-lg btn-block">add</button>
+<a href="/add" class="btn btn-outline-success">add</a>
 {% endblock %}
