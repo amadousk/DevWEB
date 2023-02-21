@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lime;
+  color: pink;
+}
+body .container {
+  background: white;
+  width: 80vw;
+  margin: 2% auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+body .italic {
+  font-style: italic;
+}
+body .hero {
+  color: navy;
+}
+body .hero .italic {
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
