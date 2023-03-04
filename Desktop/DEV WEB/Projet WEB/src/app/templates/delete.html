@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
 
-{% block title %}<title>Delete Page</title>{% endblock %}
-
 {% block content %}
-    <h1>Delete</h1>
+  <h1>Delete Data {{ id }}</h1>
+  <form method="POST">
+    <p>Are you sure you want to delete this data?</p>
+    <input type="submit" value="Yes">
+    <a href="/assos">No</a>
+  </form>
 {% endblock %}

@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-{% extends 'base.html' %}
-
-{% block title %}<title>Add Page</title>{% endblock %}
+{% extends 'base.html' %} 
 
 {% block content %}
-    <h1>Add</h1>
+<h1>{% block title %} Create a New Association {% endblock %}</h1>
+    <form action="/add" method="POST">
+      <label for="rna_id">RNA ID:</label>
+      <input type="text" id="rna_id" name="rna_id" required><br><br>
+      <label for="rna_id_ex_id">RNA ID EX:</label>
+      <input type="text" id="rna_id_ex_id" name="rna_id_ex_id" required><br><br>
+      <label for="gestion">Gestion:</label>
+      <input type="text" id="gestion" name="gestion" required><br><br>
+      <input type="submit" value="Ajouter">
+    </form>
 {% endblock %}

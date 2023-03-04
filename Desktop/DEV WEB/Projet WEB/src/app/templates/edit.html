@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
-
-{% block title %}<title>Edit Page</title>{% endblock %}
-
 {% block content %}
-    <h1>Edit</h1>
+  <h1>Edit Data {{ id }}</h1>
+  <form method="POST">
+    <label for="rna_id">RNA ID</label>
+    <input type="text" name="rna_id" value=""><br><br>
+    <label for="rna_id_ex_id">RNA ID Ex ID</label>
+    <input type="text" name="rna_id_ex_id" value=""><br><br>
+    <label for="gestion">Gestion</label>
+    <input type="text" name="gestion" value=""><br><br>
+    <input type="submit" value="Submit">
+  </form>
 {% endblock %}
